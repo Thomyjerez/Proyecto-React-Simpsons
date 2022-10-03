@@ -1,24 +1,23 @@
 import { Card, Row, Col } from "react-bootstrap";
 
-const Frase = () => {
+const Frase = ({personaje}) => {
   return (
     <Card>
       <Card.Body>
       <Row>
         <Col md={4}>
           <img
-            src="https://trello.com/1/cards/632a448eb47fe800d9bdef25/attachments/632cd86034034e0170124eec/previews/632cd86134034e0170124ef2/download/image.png"
-            alt="Homero simpson"
+            src={personaje.image}
+            alt={personaje.character}
             className="w-100"
             />
         </Col>
         <Col md={8}>
           <Card.Title>
-            <h3>Homero simpson</h3>
+            <h3>{personaje.character}</h3>
           </Card.Title>
           <Card.Text>
-            Facts are meaningless. You could use facts to prove anithing thats
-            even remotely true.
+           {personaje.quote}
           </Card.Text>
         </Col>
       </Row>

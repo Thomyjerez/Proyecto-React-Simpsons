@@ -45,7 +45,7 @@ const consultarAPI =async()=>{
       />
       </div>
       <div className="text-center">
-      <Button className="botonNaranja mb-5" variant='warning'>Obtener frase</Button>
+      <Button className="botonNaranja mb-5" variant='warning' onClick={consultarAPI}>Obtener frase</Button>
       </div>
       <Frase personaje={personaje}></Frase>
     </Container>
