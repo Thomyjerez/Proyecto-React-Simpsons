@@ -10,4 +10,4 @@ Proyecto para practicar consultas a una api usando FetchAPI
 
 ## Autor
 
-- Tomas Budeguer
+- Thomas jerez
